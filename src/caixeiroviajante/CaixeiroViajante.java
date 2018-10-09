@@ -18,7 +18,7 @@ public class CaixeiroViajante {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int largura=700, altura=700, qtde=50;
+        int largura=700, altura=700, qtde=160;
         Pontos p = new Pontos(qtde, largura, altura);
         
        JFrame pto = new JFrame("Pontos gerados");

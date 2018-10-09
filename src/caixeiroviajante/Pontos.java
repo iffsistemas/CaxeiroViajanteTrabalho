@@ -66,27 +66,40 @@ public class Pontos extends JPanel{
     }
     
 private void gerar_manual(){
-       int largura1=50;
-       int altura1=50;
+       int largura=410;
+       int altura=10;
        
       
-
+        for(int i=0; i<40; i++){
+            this.coordenadas[i][0]=largura;
+            this.coordenadas[i][1]=altura;
+            largura-=10;
+            altura+=10;
+            
+            
+                       
+        }
        
-            for (int i=0;i<4;i++){
-            this.coordenadas[i][0]=largura1;
-            largura1+=50;
+               
+        for(int i=40; i<120; i++){
+            this.coordenadas[i][0]=largura;
+            this.coordenadas[i][1]=altura;
+            largura+=10;
             
-            }
+           
             
-            for (int i=5;i<10;i++){
-            this.coordenadas[i][1]=altura1;
-            altura1+=50;
+        }
+        
+       for(int i=120; i<160; i++){
+            this.coordenadas[i][0]=largura;
+            this.coordenadas[i][1]=altura;
+            largura-=10;
+            altura-=10;
             
-            }
-      
             
             
-            
+        }
+       
             
             
     }
